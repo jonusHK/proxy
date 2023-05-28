@@ -1,5 +1,8 @@
 package com.dhkpo.proxy.jdkdynamic
 
+import com.dhkpo.proxy.app.v1.OrderControllerV1Impl
+import com.dhkpo.proxy.app.v1.OrderRepositoryV1
+import com.dhkpo.proxy.app.v1.OrderRepositoryV1Impl
 import org.junit.jupiter.api.Test
 import org.slf4j.LoggerFactory
 import java.lang.reflect.Method
