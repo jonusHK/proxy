@@ -1,13 +1,15 @@
-package com.dhkpo.proxy.config.v1_proxy.interface_proxy
+package com.dhkpo.proxy.config.v1_proxy.concrete_proxy
 
-import com.dhkpo.proxy.app.v1.OrderServiceV1
+import com.dhkpo.proxy.app.v2.OrderRepositoryV2
+import com.dhkpo.proxy.app.v2.OrderServiceV2
 import com.dhkpo.proxy.trace.TraceStatus
 import com.dhkpo.proxy.trace.logtrace.LogTrace
 
-class OrderServiceInterfaceProxy(
-    private val target: OrderServiceV1,
+class OrderServiceConcreteProxy(
+    private val target: OrderServiceV2,
     private val logTrace: LogTrace
-) : OrderServiceV1 {
+) : OrderServiceV2(null) {
+
     override fun orderItem(itemId: String) {
         var status: TraceStatus? = null
 
