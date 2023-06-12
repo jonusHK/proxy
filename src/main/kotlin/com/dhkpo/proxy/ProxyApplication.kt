@@ -1,10 +1,5 @@
 package com.dhkpo.proxy
 
-import com.dhkpo.proxy.config.v1_proxy.ConcreteProxyConfig
-import com.dhkpo.proxy.config.v1_proxy.InterfaceProxyConfig
-import com.dhkpo.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig
-import com.dhkpo.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig
-import com.dhkpo.proxy.config.v3_proxyfactory.ProxyFactoryConfigV1
 import com.dhkpo.proxy.config.v3_proxyfactory.ProxyFactoryConfigV2
 import com.dhkpo.proxy.trace.logtrace.LogTrace
 import com.dhkpo.proxy.trace.logtrace.ThreadLocalLogTrace

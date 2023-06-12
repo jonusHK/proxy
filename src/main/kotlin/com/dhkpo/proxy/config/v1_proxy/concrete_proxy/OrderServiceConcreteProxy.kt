@@ -1,6 +1,5 @@
 package com.dhkpo.proxy.config.v1_proxy.concrete_proxy
 
-import com.dhkpo.proxy.app.v2.OrderRepositoryV2
 import com.dhkpo.proxy.app.v2.OrderServiceV2
 import com.dhkpo.proxy.trace.TraceStatus
 import com.dhkpo.proxy.trace.logtrace.LogTrace
