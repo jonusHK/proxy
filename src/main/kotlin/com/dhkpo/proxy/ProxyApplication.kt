@@ -1,6 +1,7 @@
 package com.dhkpo.proxy
 
 import com.dhkpo.proxy.config.v3_proxyfactory.ProxyFactoryConfigV2
+import com.dhkpo.proxy.config.v4_postprocessor.BeanPostProcessorConfig
 import com.dhkpo.proxy.trace.logtrace.LogTrace
 import com.dhkpo.proxy.trace.logtrace.ThreadLocalLogTrace
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -14,7 +15,8 @@ import org.springframework.context.annotation.Import
 //@Import(DynamicProxyBasicConfig::class)
 //@Import(DynamicProxyFilterConfig::class)
 //@Import(ProxyFactoryConfigV1::class)
-@Import(ProxyFactoryConfigV2::class)
+//@Import(ProxyFactoryConfigV2::class)
+@Import(BeanPostProcessorConfig::class)
 @SpringBootApplication(scanBasePackages = ["com.dhkpo.proxy.app"])
 class ProxyApplication {
 
